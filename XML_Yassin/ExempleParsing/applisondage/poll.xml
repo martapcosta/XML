@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpinionPoll><Title/><Description>
+			<Parag>Un sondage purement fictif ...</Parag>
+		</Description><Authors>
+			<Author>
+				<FirstName>Christine</FirstName>
+				<LastName>Vanoirbeek</LastName>
+			</Author>
+		</Authors><Validity>
+			<Begin>2002-05-30</Begin>
+			<End>2002-06-04</End>
+		</Validity><Questionnary><Topic>
+				<TopicTitle>Etudes</TopicTitle>
+				<SimpleQuestion QuestionId="1">
+					<OneOptionOpenQuestion><QuestionText>En tant qu'informaticien, combien d'heures passez-vous par semaine devant un ordinateur?</QuestionText><OptionList><IntegerList>
+							<IntegerItem>5</IntegerItem>
+							<IntegerItem>10</IntegerItem>
+							<IntegerItem>20</IntegerItem>
+						</IntegerList></OptionList></OneOptionOpenQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="2">
+					<MultipleOptionOpenQuestion><QuestionText>Comment envisagez-vous votre avenir au terme de vos études à l'EPFL?</QuestionText><OptionList><StringList>
+							<StringItem>CEO de votre start-up  </StringItem>
+							<StringItem>chercheur fou dans un labo</StringItem>
+							<StringItem>Ingénieur à Singapour pour une entreprise multinationale </StringItem>
+							<StringItem>vendeur de glaces à Hawai  </StringItem>
+						</StringList></OptionList></MultipleOptionOpenQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="3">
+					<OpenQuestion><QuestionText>Vous êtes parachuté directeur de l'EPFL, quelles réformes proposez-vous pour les étudiants?</QuestionText></OpenQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="4">
+					<OpenQuestion><QuestionText>Vous avez été soudoyé pour convaincre les gymnasiens de faire leurs études à l'EPFL plutôt qu'à l'UNI. Quels sont vos arguments?</QuestionText></OpenQuestion>
+				</SimpleQuestion>
+			</Topic><Topic>
+				<TopicTitle>Loisirs</TopicTitle>
+				<YesOrNoQuestion QuestionId="5"><QuestionText>Vous-êtes vous rendu à Balelec?</QuestionText><YesOptionQuestion>
+						<RankingQuestion><QuestionText>Si oui, indiquez votre jugement sur l'échelle suivante</QuestionText><Scale>
+								<Criteria>
+									<Value>1</Value>
+									<Meaning>Nul</Meaning>
+								</Criteria>
+								<Criteria>
+									<Value>2</Value>
+									<Meaning>Bof</Meaning>
+								</Criteria>
+								<Criteria>
+									<Value>3</Value>
+									<Meaning>Genial</Meaning>
+								</Criteria>
+							</Scale></RankingQuestion>
+					</YesOptionQuestion></YesOrNoQuestion>
+				<SimpleQuestion QuestionId="6">
+					<MultipleOptionOpenQuestion><QuestionText>Les gymnasiens redoutent d'avoir trop de temps libre, quels sites leur recommandez-vous?</QuestionText><OptionList><URIList/></OptionList></MultipleOptionOpenQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="7">
+					<ClassificationQuestion><QuestionText>Classez selon votre préférence les bières belges suivantes proposées à Satellite</QuestionText><Subject>Binchoise blonde</Subject><Subject>Delirium Tremens</Subject><Subject>Gulden Draak</Subject><Subject>Gueuze Foudroyante</Subject></ClassificationQuestion>
+				</SimpleQuestion>
+			</Topic><Topic>
+				<TopicTitle>Vie pratique</TopicTitle>
+				<SimpleQuestion QuestionId="8">
+					<OneOptionOpenQuestion><QuestionText>Combien de temps (en min) mettez-vous pour aller à l'EPFL?</QuestionText><OptionList><IntegerList/></OptionList></OneOptionOpenQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="9">
+					<MultipleOptionOpenQuestion><QuestionText>Quels moyens de transport recommandez-vous pour vous rendre à l'EPFL?</QuestionText><OptionList><StringList>
+							<StringItem>Velo</StringItem>
+							<StringItem>Roller</StringItem>
+							<StringItem>Trotinette</StringItem>
+							<StringItem>metro</StringItem>
+							<StringItem>a pied</StringItem>
+						</StringList></OptionList></MultipleOptionOpenQuestion>
+				</SimpleQuestion>
+			</Topic><Topic>
+				<TopicTitle>Les services</TopicTitle>
+				<SimpleQuestion QuestionId="10">
+					<RankingQuestion><QuestionText>Classez, sur une échelle de 1 a 5 les prestations offertes par l'agence CFF</QuestionText><Scale>
+							<Criteria>
+								<Value>1</Value>
+								<Meaning>Nulles</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>2</Value>
+								<Meaning>Tolerables</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>3</Value>
+								<Meaning>Moyennes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>4</Value>
+								<Meaning>Bonnes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>5</Value>
+								<Meaning>Exceptionelles</Meaning>
+							</Criteria>
+						</Scale></RankingQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="11">
+					<RankingQuestion><QuestionText>Classez, sur une échelle de 1 a 5 les prestations offertes par la librairie polytechnique?</QuestionText><Scale>
+							<Criteria>
+								<Value>1</Value>
+								<Meaning>Nulles</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>2</Value>
+								<Meaning>Tolerables</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>3</Value>
+								<Meaning>Moyennes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>4</Value>
+								<Meaning>Bonnes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>5</Value>
+								<Meaning>Exceptionelles</Meaning>
+							</Criteria>
+						</Scale></RankingQuestion>
+				</SimpleQuestion>
+				<SimpleQuestion QuestionId="12">
+					<RankingQuestion><QuestionText>Classez, sur une échelle de 1 a 5 les prestations offertes par l'agence de la banque?</QuestionText><Scale>
+							<Criteria>
+								<Value>1</Value>
+								<Meaning>Nulles</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>2</Value>
+								<Meaning>Tolerables</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>3</Value>
+								<Meaning>Moyennes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>4</Value>
+								<Meaning>Bonnes</Meaning>
+							</Criteria>
+							<Criteria>
+								<Value>5</Value>
+								<Meaning>Exceptionelles</Meaning>
+							</Criteria>
+						</Scale></RankingQuestion>
+				</SimpleQuestion>
+			</Topic></Questionnary><Answers><FilledForm><Profile>
+				<BirthDate>2002-07-15</BirthDate>
+				<Sex>Male</Sex>
+				<College>
+					<CollegeName>EPFL</CollegeName>
+					<Town>Lausanne</Town>
+				</College>
+			</Profile><Answer><QuestionRef>1</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>20</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>2</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Réalisateur de films</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>3</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Mettre l'intérêt des étudiants avant ceux, financiers, des laboratoires</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>4</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Bonne formation, très bons contacts internationaux. Bonne ambiance.</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>5</QuestionRef><YesOrNoQuestionAnswer><YesOrNo>false</YesOrNo></YesOrNoQuestionAnswer></Answer><Answer><QuestionRef>6</QuestionRef><SimpleQuestionAnswer><SelectedOptions><URIList><URIItem>www.rigoler.com</URIItem><URIItem>www.perdu.com</URIItem><URIItem>www.deptimization.com</URIItem></URIList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>8</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>15</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>9</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Velo</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>10</QuestionRef><SimpleQuestionAnswer><ValueOnScale>3</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>11</QuestionRef><SimpleQuestionAnswer><ValueOnScale>2</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>12</QuestionRef><SimpleQuestionAnswer><ValueOnScale>1</ValueOnScale></SimpleQuestionAnswer></Answer></FilledForm><FilledForm><Profile>
+				<BirthDate>1979-07-04</BirthDate>
+				<Sex>Male</Sex>
+				<College>
+					<CollegeName>Lycée Blaise Cendrars</CollegeName>
+					<Town>La Chaux-de-Fonds</Town>
+				</College>
+			</Profile><Answer><QuestionRef>1</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>20</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>2</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Ingénieur à Singapour pour une entreprise multinationale </StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>3</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Happy hour à Sat 15 fois par jour.</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>4</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Environnement international, pas de risque d'être déconcentré par le nombre de filles.</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>5</QuestionRef><YesOrNoQuestionAnswer><YesOrNo>false</YesOrNo></YesOrNoQuestionAnswer></Answer><Answer><QuestionRef>6</QuestionRef><SimpleQuestionAnswer><SelectedOptions><URIList><URIItem>Capitain Cook</URIItem><URIItem>information</URIItem></URIList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>8</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>20</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>9</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Velo</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>10</QuestionRef><SimpleQuestionAnswer><ValueOnScale>4</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>11</QuestionRef><SimpleQuestionAnswer><ValueOnScale>5</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>12</QuestionRef><SimpleQuestionAnswer><ValueOnScale>1</ValueOnScale></SimpleQuestionAnswer></Answer></FilledForm><FilledForm><Profile>
+				<BirthDate>1920-02-01</BirthDate>
+				<Sex>Male</Sex>
+				<College>
+					<CollegeName>DeLaVie</CollegeName>
+					<Town>Lausanne</Town>
+				</College>
+			</Profile><Answer><QuestionRef>1</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>2</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>2</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>vendeur de glaces à Hawai</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>3</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Rendre les cours de documents multimedia obligatoire pour toutes les sections.</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>4</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Ici les cours sont plus facile et il y a plus de sel dans les mille-feuilles</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>5</QuestionRef><YesOrNoQuestionAnswer><YesOrNo>true</YesOrNo><YesOption><ValueOnScale>1</ValueOnScale></YesOption></YesOrNoQuestionAnswer></Answer><Answer><QuestionRef>6</QuestionRef><SimpleQuestionAnswer><SelectedOptions><URIList><URIItem>www.webmatin.com</URIItem><URIItem>www.edicom.ch</URIItem><URIItem>www.astro.qc.ca</URIItem><URIItem>www.vnrsa.com</URIItem><URIItem>www.easy-sa.com</URIItem></URIList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>8</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>15</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>9</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Velo</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>10</QuestionRef><SimpleQuestionAnswer><ValueOnScale>4</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>11</QuestionRef><SimpleQuestionAnswer><ValueOnScale>3</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>12</QuestionRef><SimpleQuestionAnswer><ValueOnScale>5</ValueOnScale></SimpleQuestionAnswer></Answer></FilledForm><FilledForm><Profile>
+				<BirthDate>1980-03-14</BirthDate>
+				<Sex>Male</Sex>
+				<College>
+					<CollegeName>Sint-Jozefcollege</CollegeName>
+					<Town>Turnhout</Town>
+				</College>
+			</Profile><Answer><QuestionRef>1</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>3</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>2</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>CEO de votre start-up</StringItem><StringItem>vendeur de glaces à Hawai  </StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>3</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Plus jamais de cours avant midi</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>4</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Pour les filles: il y a une grande majorité de mecs, "et pour les mecs la même chose"</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>5</QuestionRef><YesOrNoQuestionAnswer><YesOrNo>true</YesOrNo><YesOption><ValueOnScale>2</ValueOnScale></YesOption></YesOrNoQuestionAnswer></Answer><Answer><QuestionRef>6</QuestionRef><SimpleQuestionAnswer><SelectedOptions><URIList><URIItem>www.slashdot.org</URIItem><URIItem>www.w3c.org</URIItem></URIList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>8</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>10</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>9</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>Trotinette</StringItem><StringItem>Velo</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>10</QuestionRef><SimpleQuestionAnswer><ValueOnScale>1</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>11</QuestionRef><SimpleQuestionAnswer><ValueOnScale>5</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>12</QuestionRef><SimpleQuestionAnswer><ValueOnScale>1</ValueOnScale></SimpleQuestionAnswer></Answer></FilledForm><FilledForm><Profile>
+				<BirthDate>2002-07-04</BirthDate>
+				<Sex>Male</Sex>
+				<College>
+					<CollegeName>Alma</CollegeName>
+					<Town>Paris</Town>
+				</College>
+			</Profile><Answer><QuestionRef>1</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>20</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>2</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>CEO de votre start-up</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>3</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Ecole Non fumeur</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>4</QuestionRef><SimpleQuestionAnswer><OpenQuestionAnswer>
+							<Parag>Meilleur professeur de Suisse</Parag>
+						</OpenQuestionAnswer></SimpleQuestionAnswer></Answer><Answer><QuestionRef>5</QuestionRef><YesOrNoQuestionAnswer><YesOrNo>true</YesOrNo><YesOption><ValueOnScale>3</ValueOnScale></YesOption></YesOrNoQuestionAnswer></Answer><Answer><QuestionRef>6</QuestionRef><SimpleQuestionAnswer><SelectedOptions><URIList><URIItem/></URIList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>8</QuestionRef><SimpleQuestionAnswer><SelectedOption><IntegerOption>5</IntegerOption></SelectedOption></SimpleQuestionAnswer></Answer><Answer><QuestionRef>9</QuestionRef><SimpleQuestionAnswer><SelectedOptions><StringList><StringItem>a pied</StringItem></StringList></SelectedOptions></SimpleQuestionAnswer></Answer><Answer><QuestionRef>10</QuestionRef><SimpleQuestionAnswer><ValueOnScale>4</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>11</QuestionRef><SimpleQuestionAnswer><ValueOnScale>5</ValueOnScale></SimpleQuestionAnswer></Answer><Answer><QuestionRef>12</QuestionRef><SimpleQuestionAnswer><ValueOnScale>4</ValueOnScale></SimpleQuestionAnswer></Answer></FilledForm></Answers></OpinionPoll>
+
