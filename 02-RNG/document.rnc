@@ -1,0 +1,3 @@
+default namespace = "http://www.mas-rad.ch/xml/document"
+
+element document { empty }
