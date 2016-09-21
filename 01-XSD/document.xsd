@@ -3,7 +3,5 @@
            targetNamespace="http://www.mas-rad.ch/xml/document"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
-    <xs:element name="document">
-        <xs:complexType />
-    </xs:element>
+    <xs:element name="document" type="xs:string"/>
 </xs:schema>
