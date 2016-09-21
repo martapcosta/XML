@@ -1,0 +1,9 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'ch.masrad.xml.dtd.ValidateXML'
+
+repositories {
+    mavenCentral()
+}

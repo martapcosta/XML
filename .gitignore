@@ -1,6 +1,7 @@
-.metadata
-.classpath
-.settings
-.project
 *.zip
+.classpath
+.gradle
+.metadata
+.project
+.settings
 bin
