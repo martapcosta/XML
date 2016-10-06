@@ -7,8 +7,8 @@ package ch.masrad.xml.fop;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 
 import javax.xml.transform.Transformer;
@@ -24,7 +24,7 @@ import org.apache.fop.apps.MimeConstants;
 
 public class Convert {
 	public static void main(String[] args)
-			throws FOPException, TransformerException, FileNotFoundException {
+			throws FOPException, TransformerException, IOException {
 		OutputStream out = null;
 
 		StreamSource src = new StreamSource(new File("document.fo"));
@@ -40,5 +40,6 @@ public class Convert {
 		SAXResult res = new SAXResult(fop.getDefaultHandler());
 
 		transformer.transform(src, res);
+		out.close();
 	}
 }
