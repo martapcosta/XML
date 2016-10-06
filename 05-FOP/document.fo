@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root xmlns="http://www.w3.org/1999/XSL/Format">
+  <layout-master-set>
+    <simple-page-master master-name="content"
+        page-width="210mm" page-height="297mm">
+        <region-body/>
+    </simple-page-master>
+  </layout-master-set>
+  <page-sequence master-reference="content">
+    <flow flow-name="xsl-region-body">
+        <block font-weight="bold" font-size="72pt">
+            Hello <inline font-style="italic">world</inline>!
+        </block>
+    </flow>
+  </page-sequence>
+</root>

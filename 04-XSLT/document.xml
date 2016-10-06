@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<document title="Hello World!">
+    <page title="page 1">
+        <p>
+            Hello!
+        </p>
+    </page>
+</document>
