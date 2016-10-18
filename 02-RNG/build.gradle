@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'eclipse'
 
-mainClassName = 'ch.masrad.xml.rng.ValidateXML'
+mainClassName = 'ch.masrad.xml.rng.Main'
 
 repositories {
     mavenCentral()
@@ -10,4 +10,5 @@ repositories {
 
 dependencies {
     compile group: 'com.thaiopensource', name: 'jing', version: '20091111'
+    compile group: 'com.thaiopensource', name: 'trang', version: '20091111'
 }

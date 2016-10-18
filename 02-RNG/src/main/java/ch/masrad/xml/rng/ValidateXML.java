@@ -24,20 +24,22 @@ public class ValidateXML {
 
 	static final String RELAXNG_COMPACT_SYNTAX = "com.thaiopensource.relaxng.jaxp.CompactSyntaxSchemaFactory";
 
-	public static void main(String args[]) throws Exception {
-		File source = new File("document.xml");
+	public static void validate(String src, String sch) throws Exception {
+		File source = new File(src);
+		File schemaSource = new File(sch);
 
 		System.setProperty(SchemaFactory.class.getName() + ":" + RELAXNG_NS_URI,
 				RELAXNG_COMPACT_SYNTAX);
 		SchemaFactory factory = SchemaFactory.newInstance(RELAXNG_NS_URI);
 
-		Source schemaFile = new StreamSource(new File("document.rnc"));
+		Source schemaFile = new StreamSource(schemaSource);
 		Schema schema = factory.newSchema(schemaFile);
 
 		Validator validator = schema.newValidator();
 
 		final int[] errors = new int[] { 0, 0 };
 		validator.setErrorHandler(new ErrorHandler() {
+
 			@Override
 			public void fatalError(SAXParseException exception)
 					throws SAXException {
@@ -72,5 +74,6 @@ public class ValidateXML {
 			System.out.printf("Le document contient %d erreurs.%n", errors[0]);
 			System.exit(1);
 		}
+
 	}
 }
