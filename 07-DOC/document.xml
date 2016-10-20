@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xml:lang="en" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0">
+	<info>
+		<title>DocBook</title>
+	</info>
+	<section>
+		<title>Examples</title>
+		<para>
+			The five boxing wizards jump quickly. A quick movement of the enemy
+			will jeopardize six gunboats. Few black taxis drive up major roads
+			on quiet hazy nights. The quick brown fox jumped over the lazy
+			dogs. Pack my red box with five dozen quality jugs.
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="resources/figures/docbook_duck.png"
+					format="PNG" />
+			</imageobject>
+		</mediaobject>
+		<section>
+			<title>Java program</title>
+			<programlisting language="java">
+				<xi:include href="resources/Main.java" parse="text">
+					<xi:fallback>
+						FIXME: Missing XInclude content.
+					</xi:fallback>
+				</xi:include>
+			</programlisting>
+		</section>
+	</section>
+</article>

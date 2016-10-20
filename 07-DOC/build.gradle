@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'ch.masrad.xml.docbook.Convert'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.sf.docbook', name: 'docbook-xsl', version: '1.79.1', classifier:'resources', ext: 'zip'
+    compile group: 'net.sf.docbook', name: 'docbook-xml', version: '5.0', classifier:'xsd-resources', ext: 'zip'
+    compile group: 'net.sf.docbook', name: 'docbook-xsl-saxon', version: '1.0.1-pre'
+    compile group: 'net.sf.saxon', name: 'Saxon-HE', version: '9.7.0-8'
+    compile group: 'net.sf.xslthl', name: 'xslthl', version: '2.1.0'
+    compile group: 'org.apache.xmlgraphics', name: 'fop', version: '2.1'
+    compile group: 'xml-resolver', name: 'xml-resolver', version: '1.2'
+    compile group: 'xerces', name: 'xercesImpl', version: '2.11.0'
+}
