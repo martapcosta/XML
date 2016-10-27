@@ -16,21 +16,24 @@ buildscript {
   }
 }
 
+defaultTasks 'run'
+
 task run(type: com.xmlcalabash.XMLCalabashTask) {
-  pipeline = "pipe.xpl"
+  pipeline = file("pipe.xpl")
   debugPipeline = true
   safeMode = true
 
+  input('source', file('src/document.xml').absolutePath)
+  input('schema', file('src/document.rng').absolutePath)
 
-  input('source','src/document.xml')
-  input('schema','src/document.rng')
+  input('html.xsl', file('xsl/html.xsl').absolutePath)
+  input('svg.xsl', file('xsl/svg.xsl').absolutePath)
+  input('xslfo.xsl', file('xsl/xslfo.xsl').absolutePath)
 
-  input('html.xsl','xsl/html.xsl')
-  input('svg.xsl','xsl/svg.xsl')
-  input('xslfo.xsl','xsl/xslfo.xsl')
-
-  output('html', 'output/document.html')
-  option('pdf', 'output/document.pdf')
-  output('fo', 'output/document.fo')
-  output('svg', 'output/document.svg')
+  output('html', file('output/document.html').absolutePath)
+  option('pdf', file('output/document.pdf').toURI().toString())
+  output('fo', file('output/document.fo').absolutePath)
+  output('svg', file('output/document.svg').absolutePath)
 }
+run.group = "application"
+run.description = "run the pipeline"
