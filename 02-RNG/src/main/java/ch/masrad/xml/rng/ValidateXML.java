@@ -74,6 +74,5 @@ public class ValidateXML {
 			System.out.printf("Le document contient %d erreurs.%n", errors[0]);
 			System.exit(1);
 		}
-
 	}
 }
