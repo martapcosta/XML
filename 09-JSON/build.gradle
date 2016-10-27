@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'ch.masrad.xml.json.Validate'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.github.fge', name: 'json-schema-validator', version: '2.2.6'
+}

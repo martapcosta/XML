@@ -1,0 +1,10 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"properties": {
+		"gender": { "type": "string", "pattern": "[MFO]" },
+		"firstname": { "type": "string" },
+		"lastname": { "type": "string" },
+		"birthdate": { "type": "string", "format": "date-time" }
+	}
+}
