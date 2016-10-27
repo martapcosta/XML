@@ -1,0 +1,7 @@
+// top-level build.gradle
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
