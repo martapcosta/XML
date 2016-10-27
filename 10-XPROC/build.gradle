@@ -1,0 +1,36 @@
+apply plugin: 'java'
+
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url "http://repo.boundlessgeo.com/main/"
+    }
+  }
+
+  dependencies {
+    classpath group: 'com.xmlcalabash', name: 'gradle', version: '0.0.2'
+    classpath group: 'com.xmlcalabash', name: 'xmlcalabash', version: '1.1.12-96'
+    classpath group: 'com.xmlcalabash', name: 'xmlcalabash1-print', version: '1.1.5'
+    classpath group: 'org.apache.xmlgraphics', name: 'fop', version: '2.1'
+  }
+}
+
+task run(type: com.xmlcalabash.XMLCalabashTask) {
+  pipeline = "pipe.xpl"
+  debugPipeline = true
+  safeMode = true
+
+
+  input('source','src/document.xml')
+  input('schema','src/document.rng')
+
+  input('html.xsl','xsl/html.xsl')
+  input('svg.xsl','xsl/svg.xsl')
+  input('xslfo.xsl','xsl/xslfo.xsl')
+
+  output('html', 'output/document.html')
+  option('pdf', 'output/document.pdf')
+  output('fo', 'output/document.fo')
+  output('svg', 'output/document.svg')
+}
