@@ -1,0 +1,27 @@
+<!ELEMENT dataset (record+)>
+<!ELEMENT record (	id,
+					firstname,
+					lastname,
+					stressaddress,
+					city,
+					country,
+					phone*,
+					email?,
+					gender,
+					jobtitle*,
+					skill*)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT stressaddress (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT jobtitle (#PCDATA)>
+<!ATTLIST jobtitle
+		datebegin CDATA #IMPLIED
+		dateend CDATA #IMPLIED
+>
+<!ELEMENT skill (#PCDATA)>

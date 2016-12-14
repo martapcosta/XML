@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<liste>
+	<livre>
+		<titre genre="jeu">Le Texas Hold Em Poker online</titre>
+		<auteur>Mark Stohan</auteur>
+		<auteur>Robert Bluman</auteur>
+		<parution>2006</parution>
+	</livre>
+	<livre>
+		<titre genre="jeu">Sudoku Manga</titre>
+		<auteur>Sudoku Factory</auteur>
+		<parution>2007</parution>
+	</livre>
+	<livre>
+		<titre genre="jeu">Kakoku</titre>
+		<auteur>Hizi Kagochi</auteur>
+		<parution>2005</parution>
+	</livre>
+		<livre>
+		<titre genre="photo">Manuel de la photo</titre>
+		<auteur>Jackie Contiboeuf</auteur>
+		<auteur>Hugo Costa</auteur>
+		<parution>2006</parution>
+	</livre>	
+</liste>

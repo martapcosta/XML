@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<?xml-stylesheet type="text/xsl" href="style.xsl"?>
-<lfm status="ok">
-<tracks page="1" perPage="1000" totalPages="24547" total="24546635">
-<track>
-<name>Starboy</name>
+<lfm status="ok"><tracks page="1" perPage="1000" totalPages="24547" total="24546635"><track><name>Starboy</name>
 <duration>0</duration>
 <playcount>963207</playcount>
 <listeners>140445</listeners>

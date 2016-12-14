@@ -1,1 +1,35 @@
-<!ELEMENT document EMPTY>
+<!ELEMENT lfm (tracks)>
+<!ATTLIST lfm
+		status CDATA #REQUIRED
+>
+<!ELEMENT tracks (track+)>
+<!ATTLIST tracks
+		page CDATA #REQUIRED
+		perPage CDATA #REQUIRED
+		total CDATA #REQUIRED
+		totalPages CDATA #REQUIRED
+>
+<!ELEMENT track (	name,
+					duration,
+					playcount,
+					listeners,
+					mbid,
+					url,
+					streamable,
+					artist,
+					image+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT playcount (#PCDATA)>
+<!ELEMENT listeners (#PCDATA)>
+<!ELEMENT mbid (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT streamable (#PCDATA)>
+<!ATTLIST streamable
+		fulltrack CDATA #REQUIRED
+>
+<!ELEMENT artist (name,mbid,url)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image
+		size CDATA #REQUIRED
+>

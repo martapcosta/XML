@@ -1,0 +1,6 @@
+<element name="document" xmlns="http://relaxng.org/ns/structure/1.0">
+    <attribute name="title">
+        <text/>
+    </attribute>
+    <text/>
+</element>

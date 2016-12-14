@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<système_solaire>
+	<etoile>
+		<nom>Soleil</nom>
+		<type_spectral>G2</type_spectral>
+		<age unit="milliard d'années">5</age>
+	</etoile>
+	<planete type="tellurique">
+		<nom>Mercure</nom>
+		<distance unit="UA">0.4</distance>
+		<masse unit="masse terrestre">0.06</masse>
+		<diametre unit="diametre terrestre">0.4</diametre>
+	</planete>
+	<planete type="tellurique">
+		<nom>Venus</nom>
+		<distance unit="UA">0.7</distance>
+		<masse unit="masse terrestre">0.8</masse>
+		<diametre unit="diametre terrestre">0.9</diametre>
+	</planete>
+	<planete type="tellurique">
+		<nom>Terre</nom>
+		<distance unit="km">149600000</distance>
+		<masse unit="kg">5.98e24</masse>
+		<diametre unit="km">12756</diametre>
+		<satelite nombre="1"></satelite>
+	</planete>
+	<planete type="tellurique">
+		<nom>Mars</nom>
+		<distance unit="UA">1.5</distance>
+		<masse unit="masse terrestre">0.1</masse>
+		<diametre unit="diametre terrestre">0.5</diametre>
+		<satelite nombre="2"></satelite>
+	</planete>
+	<planete anneau="oui" type="gazeuse">
+		<nom>Jupiter</nom>
+		<distance unit="UA">5.2</distance>
+		<masse unit="masse terrestre">318</masse>
+		<diametre unit="diametre terrestre">11</diametre>
+		<satelite nombre="16"></satelite>
+	</planete>
+</système_solaire>

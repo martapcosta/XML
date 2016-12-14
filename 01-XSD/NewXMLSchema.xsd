@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Définition des types simples -->
+	<xs:simpleType name="typePlanete">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="tellurique" />
+			<xs:enumeration value="gazeuse" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- Déclaration des elements du type simple -->
+	<xs:element name="nom" type="xs:string" />
+	<xs:element name="type_spectral" />
+
+	<!-- Déclaration des elements du type complexe -->
+	<xs:element name="système_solaire">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="etoile" />
+				<xs:element ref="planete" minOccurs="5" maxOccurs="5" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="etoile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom" />
+				<xs:element ref="type_spectral" />
+				<xs:element ref="age" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="planete">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nom" />
+				<xs:element ref="distance" />
+				<xs:element ref="masse" />
+				<xs:element ref="diametre" />
+				<xs:element ref="satelite" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute type="typePlanete" name="type" />
+			<xs:attribute name="anneau" use="optional" fixed="oui" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="age">
+		<xs:complexType>
+			<xs:attribute name="unit" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="diametre">
+		<xs:complexType mixed="true">
+			<xs:attribute name="unit" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="masse">
+		<xs:complexType mixed="true">
+			<xs:attribute name="unit" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="distance">
+		<xs:complexType mixed="true">
+			<xs:attribute name="unit" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="satelite">
+		<xs:complexType>
+			<xs:attribute name="nombre" type="xs:positiveInteger"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

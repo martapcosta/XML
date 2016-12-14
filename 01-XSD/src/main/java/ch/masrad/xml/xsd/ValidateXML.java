@@ -22,8 +22,8 @@ public class ValidateXML {
 	static final String JAXP_SCHEMA_LANGUAGE = "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
 
 	public static void main(String args[]) throws Exception {
-		InputSource source = new InputSource("document.xml");
-
+		InputSource source = new InputSource("NewFile.xml");
+		//InputSource source = new InputSource("document.xml");
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		factory.setValidating(true);
 		factory.setNamespaceAware(true);
